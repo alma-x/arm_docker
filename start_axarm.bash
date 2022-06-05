@@ -21,7 +21,7 @@ do_the_magic(){
 	#CAN I USE ROSLAUNCH HERE?
 }
 
-if [ -f /root/dummy.file ]; do
+if [ -f /root/dummy.file ]; then
 	touch /root/dummy.file
 	do_the_magic
 fi
