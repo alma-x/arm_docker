@@ -6,7 +6,7 @@ git pull -qqq
 }
 
 # update container tools 
-cd /root/scripts/arm_docker
+cd /root/arm_docker
 update_git
 
 if [ -f .bash_aliases ]; then
