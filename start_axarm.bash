@@ -20,5 +20,6 @@
 #CAN I USE ROSLAUNCH HERE?
 
 # start cli
+sleep 4
 echo "this is a test"
 /bin/bash
