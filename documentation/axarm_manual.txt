@@ -1,0 +1,50 @@
+_____________________________________________________
+THIS IS THE README FILE FOR ALMA-X TEAM ARM CONTAINER
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+### COMMANDS
+
+manual		prints this page
+
+defaultbash	restores default bash configuration
+
+newbash		bash configuration with added ron ENV variables
+
+updatex		updates local repositories
+
+
+### STARTUP COMMAND
+
+roslaunch ur3_control init.launch inter_arg:=1
+
+
+### OBJECTIVE COMMANDS
+
+1)	roslaunch ur3_control objective1.launch
+
+2)	roslaunch ur3_control objective2.launch input:="ID1 ID2 ID3 ID4"
+
+	SUBSTITUTE ID1,... WITH A INTEGER NUMBER FOR EXAMPLE input:="1 2 10 12"
+
+3)	roslaunch ur3_control objective3.launch
+
+4)	roslaunch ur3_control objective4.launch input:="ANGLE"
+
+	SUBSTITUTE ANGLE WITH A FLOAT NUMBER FOR EXAMPLE input:="12.50"
+
+5)	roslaunch ur3_control objective5.launch
+
+6)	roslaunch ur3_control objective6.launch
+
+7)	roslaunch ur3_control objective7.launch input:=$(rosparam get hidden_id)
+
+	SUBSTITUTE ID WITH A INTEGER NUMBER FOR EXAMPLE input:="1"
+
+8)	roslaunch ur3_control objective8.launch
+
+9)	roslaunch ur3_control objective9.launch
+
+
+### TERMINATION
+
+roslaunch ur3_control kill_node.launch
