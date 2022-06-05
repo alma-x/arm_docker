@@ -115,6 +115,9 @@ if [ -f $HOME/.bash_autocomplete ]; then
 	source $HOME/.bash_autocomplete
 fi
 
+
+/root/arm_docker/start_axarm.bash
+
 #----TERMINAL STARTUP MESSAGE------
 
 if [ -f /root/arm_docker/documentation/startup_message.txt ]; then

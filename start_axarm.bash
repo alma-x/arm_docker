@@ -1,25 +1,30 @@
 #!/bin/bash
 
-# update container tools
-#./update_container.bash
+do_the_magic(){
+	# update container tools
+	root/arm_docker/update_container.bash
 
-# update alma-x ros repo
-#./update_axarm.bash
+	# update alma-x ros repo
+	root/arm_docker/update_axarm.bash
 
-# update erc ros repo
-#./update_erc.bash
+	# update erc ros repo
+	root/arm_docker/update_erc.bash
 
-# build and setup
-#./config_axarm.bash
+	# build and setup
+	root/arm_docker/config_axarm.bash
 
-# launch simulation
-#IF SOME_PARAM_FROM_arm_docker: lauch gazebo simulation
-#ELSE?
+	# launch simulation
+	#IF SOME_PARAM_FROM_arm_docker: lauch gazebo simulation
+	#ELSE?
 
-# start almax arm routines
-#CAN I USE ROSLAUNCH HERE?
+	# start almax arm routines
+	#CAN I USE ROSLAUNCH HERE?
+}
+
+if [ -f /root/dummy.file ]; do
+	touch /root/dummy.file
+	do_the_magic
+fi
 
 # start cli
-sleep 4
-echo "this is a test"
-/bin/bash
+#bin/bash
