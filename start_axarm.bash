@@ -20,4 +20,5 @@
 #CAN I USE ROSLAUNCH HERE?
 
 # start cli
+echo "this is a test"
 /bin/bash
