@@ -116,7 +116,6 @@ if [ -f $HOME/.bash_autocomplete ]; then
 fi
 
 
-/root/arm_docker/start_axarm.bash
 
 #----TERMINAL STARTUP MESSAGE------
 
@@ -131,8 +130,10 @@ fi
 #export ROS_IP=192.168.1.56
 #export ROS_IP=127.0.0.1
 
-#source /opt/ros/noetic/setup.bash
+source /opt/ros/noetic/setup.bash
+source /catkin_ws/devel/setup.bash
 #export GAZEBO_MODEL_PATH=:${GAZEBO_MODEL_PATH}:/home/uga/ros/erc/src/almasim/models:/home/uga/ros/erc/src/almasim/models
 #export TURTLEBOT3_MODEL=burger
 
+/root/arm_docker/start_axarm.bash
 

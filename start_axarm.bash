@@ -8,7 +8,7 @@ do_the_magic(){
 	root/arm_docker/update_axarm.bash
 
 	# update erc ros repo
-	root/arm_docker/update_erc.bash
+	#root/arm_docker/update_erc.bash
 
 	# build and setup
 	root/arm_docker/config_axarm.bash
