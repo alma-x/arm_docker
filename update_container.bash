@@ -9,15 +9,15 @@ git pull -qqq
 cd /root/arm_docker
 update_git
 
-if [ -f .bash_aliases ]; then
-	rm /root/.bash_aliases
-	cp .bash_aliases /root
-fi
+#if [ -f .bash_aliases ]; then
+#	rm /root/.bash_aliases
+#	cp .bash_aliases /root
+#fi
 
-if [ -f .bashrc ]; then
-	rm /root/.bashrc
-	cp .bashrc /root && source /root/.bashrc
-fi
+#if [ -f .bashrc ]; then
+#	rm /root/.bashrc
+#	cp .bashrc /root && source /root/.bashrc
+#fi
 
 
 # update linux
