@@ -1,17 +1,22 @@
 #!/bin/bash
 
 do_the_magic(){
+	
 	# update container tools
+	echo "update container"
 	root/arm_docker/update_container.bash
 
 	# update alma-x ros repo
-	root/arm_docker/update_axarm.bash
+	echo "update almax"
+	#root/arm_docker/update_axarm.bash
 
 	# update erc ros repo
+	echo "update erc"
 	#root/arm_docker/update_erc.bash
 
 	# build and setup
-	root/arm_docker/config_axarm.bash
+	echo "build"
+	#root/arm_docker/config_axarm.bash
 
 	# launch simulation
 	#IF SOME_PARAM_FROM_arm_docker: lauch gazebo simulation
