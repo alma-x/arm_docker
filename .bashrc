@@ -135,5 +135,5 @@ source /catkin_ws/devel/setup.bash
 #export GAZEBO_MODEL_PATH=:${GAZEBO_MODEL_PATH}:/home/uga/ros/erc/src/almasim/models:/home/uga/ros/erc/src/almasim/models
 #export TURTLEBOT3_MODEL=burger
 
-/root/arm_docker/start_axarm.bash
+/root/arm_docker/start_axarm.sh
 
