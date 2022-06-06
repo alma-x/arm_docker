@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # definitions
 update_git(){

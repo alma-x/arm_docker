@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 # definitions
 update_git(){
-git pull -qqq
+git pull -q
 }
 
 # update container tools 

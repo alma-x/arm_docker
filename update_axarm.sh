@@ -1,8 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
 # definitions
 update_git(){
-git pull -qqq
+git pull -q
 }
 
 # update ros code for all subdirs that are git repositories

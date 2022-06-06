@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 do_the_magic(){
 	
@@ -12,7 +12,7 @@ do_the_magic(){
 	#/root/arm_docker/update_erc.bash
 
 	# build and setup
-	#/root/arm_docker/config_axarm.bash
+	/root/arm_docker/config_axarm.bash
 
 	# launch simulation
 	#IF SOME_PARAM_FROM_arm_docker: lauch gazebo simulation
