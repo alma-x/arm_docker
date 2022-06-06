@@ -5,11 +5,11 @@ build_ros(){
 
 if [ -f /catkin_ws/devel/ ]; then
 	rm -r /catkin_ws/devel/ 
-if
+fi
 
 if [ -f /catkin_ws/build/ ]; then
 	rm -r /catkin_ws/build/ 
-if
+fi
 
 #catkin build -qqqy
 cd /catkin_ws
