@@ -21,6 +21,6 @@ alias bashconfigure="source $HOME/.bashrc"
 alias apthistory='less /var/log/apt/history.log'
 
 
-alias updateax=/root/arm_docker/update_axarm.bash && /root/arm_docker/config_axarm.bash
+alias updateax=/root/arm_docker/update_axarm.sh && /root/arm_docker/config_axarm.sh
 
 alias manual="cat /root/arm_docker/documentation/axarm_manual.txt"
