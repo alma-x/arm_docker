@@ -25,7 +25,10 @@ do_the_magic(){
 if [ ! -f /root/dummy.file ]; then
 	touch /root/dummy.file
 	do_the_magic
+	# UPDATE 1: SOURCE .bashrc here
+	source /root/.bashrc
 fi
+
 
 # start cli
 #bin/bash

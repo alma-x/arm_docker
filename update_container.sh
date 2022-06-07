@@ -23,10 +23,15 @@ if [ -f /root/arm_docker/.bashrc ] ; then
 	fi
 fi
 
-source /root/.bashrc
+# UPDATE 1: REMOVE FROM HERE, MOVE TO HIGHER LEVEL SCRIPT
+#source /root/.bashrc
 
 # update linux
 #apt update -qqqy && apt upgrade -qqqy
+
+
+# UPDATE 2: ros update
+apt install -qqqy ros-noetic-moveit-visual-tools
 
 
 
