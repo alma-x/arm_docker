@@ -120,7 +120,7 @@ fi
 #----TERMINAL STARTUP MESSAGE------
 
 if [ -f /root/arm_docker/documentation/startup_message.txt ]; then
-    cat / /root/arm_docker/documentation/startup_message.txt
+    cat /root/arm_docker/documentation/startup_message.txt
 fi
 
 # ROS #######################
