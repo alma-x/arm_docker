@@ -8,6 +8,8 @@ git pull -q
 
 build_ros(){
 
+	echo "building"
+
 	if [ -d /catkin_ws/devel/ ]; then
 		rm -r /catkin_ws/devel/ 
 	fi
