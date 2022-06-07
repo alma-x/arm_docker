@@ -1,17 +1,15 @@
 #!/bin/bash
 
-# definitions
+# definitions #######################################################
 update_git(){
 git pull -q
 }
 
+####################################################################
+
 # update container tools 
 cd /root/arm_docker
 update_git
-
-
-echo "cleaning bash"
-sleep 1.5
 	
 if [ -f /root/arm_docker/.bash_aliases ] ; then
 	if ! cmp /root/arm_docker/.bash_aliases /root/.bash_aliases ; then
@@ -35,9 +33,6 @@ fi
 
 
 # UPDATE 2: ros update
-echo "updating apt packages"
-sleep 1.5
-	
 apt install -y ros-noetic-moveit-visual-tools >/dev/null 2>&1
 
 
