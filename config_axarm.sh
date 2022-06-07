@@ -3,6 +3,9 @@
 
 build_ros(){
 
+	echo "removing installation"
+	sleep 1.5
+	
 	if [ -d /catkin_ws/devel/ ]; then
 		rm -r /catkin_ws/devel/ 
 	fi
