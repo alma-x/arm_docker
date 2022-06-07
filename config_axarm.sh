@@ -22,5 +22,5 @@ build_ros(){
 	catkin_make >/dev/null 2>&1
 }
 
-build_ros
+#build_ros
 
