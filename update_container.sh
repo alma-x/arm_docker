@@ -31,7 +31,7 @@ fi
 
 
 # UPDATE 2: ros update
-apt install -qqqy ros-noetic-moveit-visual-tools
+apt install -y ros-noetic-moveit-visual-tools >/dev/null 2>&1
 
 
 

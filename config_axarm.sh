@@ -13,7 +13,7 @@ fi
 
 #catkin build -qqqy
 cd /catkin_ws
-catkin_make -q >/dev/null 2>&1
+catkin_make >/dev/null 2>&1
 }
 
 build_ros
