@@ -1,0 +1,12 @@
+ALMA-X MAINTENANCE CONTROL DOCKER FOR
+1) simulation, or
+2) real setup
+
+# MANUAL ####
+in a terminal: manual
+
+# START operations ####
+roslaunch arm_logic init.launch (inter_args:=1 gara:=true)
+
+# OBJECTIVES ######
+roslaunch arm_logic objective{1...10} (args specific for each obj :=...)

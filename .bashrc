@@ -117,12 +117,19 @@ fi
 
 
 
-#----TERMINAL STARTUP MESSAGE------
+# TERMINAL STARTUP MESSAGE ############
 
 if [ -f /root/arm_docker/documentation/startup_message.txt ]; then
     cat /root/arm_docker/documentation/startup_message.txt
 fi
 
+# GITHUB CREDENTIALS #################
+
+if [ -f /root/.gitconfig ]; then
+    echo;echo "current configured github user"
+    cat /root/.gitconfig
+else echo;echo "please configure your github user for pushing"
+fi
 # ROS #######################
 
 #export ROS_HOSTNAME=localhost
