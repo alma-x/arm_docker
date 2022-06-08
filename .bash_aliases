@@ -26,3 +26,5 @@ alias updateax=/root/arm_docker/update_axarm.sh && /root/arm_docker/config_axarm
 alias manual="cat /root/arm_docker/documentation/axarm_manual.txt"
 
 alias cleanconfig="if [ -f /root/dummy.file ]; then rm /root/dummy.file; fi"
+
+alias code="code --no-sandbox --user-data-dir /root/code_ws"
