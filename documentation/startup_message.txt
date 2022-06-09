@@ -6,7 +6,9 @@ ALMA-X MAINTENANCE CONTROL DOCKER FOR
 in a terminal: manual
 
 # START operations ####
-roslaunch arm_logic init.launch (inter_args:=1 gara:=true)
+FOR TEST DRIVE: roslaunch arm_logic TD2.launch
+
+IGNORE!roslaunch arm_logic init.launch (inter_args:=1 gara:=true)!
 
 # OBJECTIVES ######
 roslaunch arm_logic objective{1...10} (args specific for each obj :=...)
