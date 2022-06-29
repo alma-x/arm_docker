@@ -1,7 +1,10 @@
 ALMA-X MAINTENANCE CONTROL DOCKER FOR
 1) simulation, or
 2) real setup
-
+######################################################
+RICORDATI DI ELIMINARE /root/dummy.file ($ cleanconfig)
+PRIMA DELL'INVIO (E CANCELLAMI)
+#######################################################
 # MANUAL ####
 in a terminal: manual
 
