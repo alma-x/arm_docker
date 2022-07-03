@@ -1,15 +1,12 @@
 ALMA-X MAINTENANCE CONTROL DOCKER FOR
 1) simulation, or
 2) real setup
-######################################################
-RICORDATI DI ELIMINARE /root/dummy.file ($ cleanconfig)
-PRIMA DELL'INVIO (E CANCELLAMI)
-#######################################################
-# MANUAL ####
+
+# FIELD MANUAL AND DOCUMENTATION #######
 in a terminal: manual
 
 # START operations ####
-FOR TEST DRIVE: roslaunch arm_logic TD2.launch
+FOR TEST DRIVE: roslaunch arm_logic TD3.launch
 
 IGNORE!roslaunch arm_logic init.launch (inter_args:=1 gara:=true)!
 
