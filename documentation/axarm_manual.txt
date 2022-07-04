@@ -12,44 +12,55 @@ REMOVED: updatex updates local repositories
 ### STARTUP COMMAND
 
 FOR TEST DRIVE ENVIRONMENT:
-roslaunch ur3_control TD2.launch
+roslaunch arm_logic TD3.launch
 
 FOR SIMULATION:
-roslaunch ur3_control init.launch inter_arg:=1
-(actually TD2.launch it's only a convinience copy of this one)
+roslaunch arm_logic init.launch inter_arg:=1
+(actually TD3.launch it's only a convinience copy of this one)
+ALIAS COMMAND OF ABOVE: axinit
 
 ### OBJECTIVE COMMANDS
 
-1)	roslaunch ur3_control objective1.launch
+1){ENVIRONMENT EXPLORATION}
+	roslaunch arm_logic objective1.launch
 
 
-2)	roslaunch ur3_control objective2.launch input:="ID1 ID2 ID3 ID4"
+2){BUTTON SEQUENCE PUSHING}	
+	roslaunch arm_logic objective2.launch input:="ID1 ID2 ID3 ID4"
 
 	SUBSTITUTE ID1,... WITH A INTEGER NUMBER FOR EXAMPLE input:="1 2 10 12"
 	
 
-3)	roslaunch ur3_control objective3.launch
+3){IMU GRABBING}
+	roslaunch arm_logic objective3.launch
 
-4)	roslaunch ur3_control objective4.launch angle:="ANGLE"
+4){IMU POSITIONING}
+	roslaunch arm_logic objective4.launch angle:="ANGLE"
 
 	SUBSTITUTE ANGLE WITH A FLOAT NUMBER FOR EXAMPLE angle:="12.50"
 	
 
-5)	roslaunch ur3_control objective5.launch
+5){}
+	roslaunch arm_logic objective5.launch
 
-6)	roslaunch ur3_control objective6.launch
+6){}
+	roslaunch arm_logic objective6.launch
 
-7)	roslaunch ur3_control objective7.launch
+7){}
+	roslaunch arm_logic objective7.launch
 
-8)	roslaunch ur3_control objective8.launch
+8){}
+	roslaunch arm_logic objective8.launch
 
-9)	roslaunch ur3_control objective9.launch {tag:=$(rosparam get hidden_id)} OR tag:=ID_h
+9){PUSHING HIDDEN ID's BUTTON}
+	roslaunch arm_logic objective9.launch {tag:=$(rosparam get hidden_id)} OR tag:=ID_h
 
 	NOTE THAT IF NOTHING IS SPECIFIED, PROGRAM WILL RECOVER HIDDEN ID ON ITS OWN
 	OTHERWISE SUBSTITUTE ID WITH A INTEGER NUMBER FOR EXAMPLE tag:="1"
 
 
-10)	roslaunch ur3_control objective10.launch
+10){HOME POSITION RETURNING}
+	roslaunch arm_logic objective10.launch
 
 
 ### TERMINATION
