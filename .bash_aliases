@@ -32,3 +32,16 @@ alias cdax="cd /catkin_ws/src/almax"
 
 # OPERATIONS
 alias axinit="roslaunch arm_logic init.launch"
+alias axvision="roslaunch arm_vision vision.launch"
+alias axcontrol="roslaunch arm_control control.launch"
+alias axlogic="roslaunch arm_logic logic.launch"
+alias axobj1="roslaunch arm_logic objective1.launch"
+alias axobj2='roslaunch arm_logic objective2.launch tags:="1 2 3 4"'
+alias axobj3="roslaunch arm_logic objective3.launch"
+alias axobj4="roslaunch arm_logic objective4.launch angle:=30.0"
+alias axobj5="roslaunch arm_logic objective5.launch"
+alias axobj6="roslaunch arm_logic objective6.launch"
+alias axobj7="roslaunch arm_logic objective7.launch"
+alias axobj8="roslaunch arm_logic objective8.launch"
+alias axobj9='roslaunch arm_logic objective9.launch tag:="1"'
+alias axobj10="roslaunch arm_logic objective10.launch"
